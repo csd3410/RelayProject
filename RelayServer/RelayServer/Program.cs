@@ -6,7 +6,7 @@ namespace RelayServer
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World");
+            Console.Title = "Relay Server";
             Console.ReadKey();
         }
     }
