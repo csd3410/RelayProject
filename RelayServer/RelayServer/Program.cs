@@ -1,9 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using RiptideNetworking;
+using Riptide;
+using System.Threading;
 
 namespace RelayServer
 {
@@ -14,8 +11,9 @@ namespace RelayServer
             Console.Title = "Relay Server";
             Server _Server = new Server();
             _Server.Start(7777, 10);
-            Console.ReadKey();
+            Thread.Sleep(20000);
             _Server.Stop();
+            Console.ReadKey();
         }
     }
 }
