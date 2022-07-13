@@ -11,7 +11,7 @@ namespace RelayServer
             Console.Title = "Relay Server";
             Server _Server = new Server();
             _Server.Start(7777, 10);
-            Thread.Sleep(20000);
+            Thread.Sleep(50000);
             _Server.Stop();
             Console.ReadKey();
         }
